@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title> Albert AP Statistics College Rankings Project</title>
+
+<link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="hero">
+  <h1>Albert's AP Statistics: College Rankings</h1>
+  <p>Weighted College Rating System</p>
+</div>
+
+<!-- NAV (RESTORED PROPER STRUCTURE) -->
+<nav class="nav">
+  <a href="index.html" class="nav-tab active">Home</a>
+  <a href="graduation.html" class="nav-tab">Graduation Rate</a>
+  <a href="cost.html" class="nav-tab">Annual Cost</a>
+  <a href="transportation.html" class="nav-tab">Transportation</a>
+  <a href="students.html" class="nav-tab">Student Population</a>
+  <a href="distance.html" class="nav-tab">Distance</a>
+  <a href="final.html" class="nav-tab">Final Weights</a>
+</nav>
+
+<div class="card">
+<h2>Project Overview</h2>
+<p>
+For my College Rankings Project, I designed a weighted system to evaluate five major colleges using a combination of academic performance metrics and real-world student decision factors. The goal of this project was not to simply rank colleges based on prestige, but to create a more realistic model of how students actually choose schools in practice.
+</p>
+
+<p>
+I selected five categories: Graduation Rate, Annual Cost, Public Transportation Accessibility, Student Population, and Distance From Home. These categories were chosen because they represent both measurable academic outcomes and personal factors that influence college decisions. Each category was assigned a weight based on how important I believed it should be in determining an overall ranking.
+</p>
+
+</div>
+<div class="section">
+    <h2>How I Weighted Each Category</h2>
+  
+    <div class="card">
+      <p>
+        For my ranking system, I assigned different weights to each category based on how important I personally thought they were when choosing a college. I wanted the system to reflect real student decision-making instead of just academic reputation.
+      </p>
+  
+      <p>
+        <b>Graduation Rate (30%)</b> — This was the most important category because it shows whether students actually finish their degree. If a school has a high graduation rate, it usually means students are supported well academically.
+      </p>
+  
+      <p>
+        <b>Annual Cost (30%)</b> — I weighted this equally with graduation rate because affordability is a huge factor. Even a great school isn’t realistic if it’s too expensive.
+      </p>
+  
+      <p>
+        <b>Public Transportation (20%)</b> — This mattered because transportation affects daily life, internships, and access to opportunities outside campus.
+      </p>
+  
+      <p>
+        <b>Student Population (10%)</b> — School size affects experience, but I didn’t think it was as important as cost or outcomes.
+      </p>
+  
+      <p>
+        <b>Distance From Home (10%)</b> — This was the least important factor since students can choose to go far or stay close depending on preference.
+      </p>
+  
+      <p>
+        Overall, I prioritized long-term outcomes (graduation) and affordability over convenience-based factors like distance or school size.
+      </p>
+    </div>
+  </div>
+<div class="section">
+    <h2>Top 5 Ranked Colleges</h2>
+  
+    <div id="top5">
+  
+      <!-- #1 UVA -->
+      <div class="college-card">
+        <div class="college-name">#1 University of Virginia</div>
+  
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Rotunda%20and%20Lawn%20University%20of%20Virginia%20Charlottesville%20VA%20March%202011.jpg" alt="University of Virginia">
+  
+        <div class="college-details">
+          <p><b>Strongest Areas:</b> Graduation Rate, Cost</p>
+          <p><b>Weakest Area:</b> Distance</p>
+          <p>
+            Virginia came out on top mostly because it just felt the most balanced overall. The graduation rate is really strong, which made it stand out right away, and the cost isn’t too extreme compared to other top schools. Since those two categories mattered the most in my system, it naturally ended up #1. The only downside is that it’s kind of far from Cambridge, but that didn’t hurt it enough to change its ranking.
+          </p>
+        </div>
+      </div>
+  
+      <!-- #2 UGA -->
+      <div class="college-card">
+        <div class="college-name">#2 University of Georgia</div>
+  
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/University_of_Georgia_G-Day_2025.jpg" alt="University of Georgia">
+  
+        <div class="college-details">
+          <p><b>Strongest Areas:</b> Cost, Student Population</p>
+          <p><b>Weakest Area:</b> Distance</p>
+          <p>
+            Georgia ranked really high because it’s affordable and has a huge student population, which makes it feel like there are a lot of opportunities and things going on. It’s the kind of school that feels accessible for a lot of students. The only thing that really pulled it down was how far away it is, but overall it still scored really well.
+          </p>
+        </div>
+      </div>
+  
+      <!-- #3 WASHU -->
+      <div class="college-card">
+        <div class="college-name">#3 Washington University in St. Louis</div>
+  
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Brookings%20Hall%20at%20Washington%20University.jpg" alt="Washington University in St. Louis">
+  
+        <div class="college-details">
+          <p><b>Strongest Areas:</b> Graduation Rate</p>
+          <p><b>Weakest Areas:</b> Cost, Distance</p>
+          <p>
+            WashU is one of those schools that does really well academically, especially with graduation rate. That’s basically what kept it so high in my ranking. The downside is that it’s expensive and far away, which hurt it in a couple categories. But even with that, the academic strength carried it pretty far.
+          </p>
+        </div>
+      </div>
+  
+      <!-- #4 DUKE -->
+      <div class="college-card">
+        <div class="college-name">#4 Duke University</div>
+  
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Duke_University_Chapel_in_Durham,_North_Carolina_on_7_February_2026.jpg" alt="Duke University">
+  
+        <div class="college-details">
+          <p><b>Strongest Areas:</b> Graduation Rate</p>
+          <p><b>Weakest Area:</b> Cost</p>
+          <p>
+            Duke is kind of similar — it does really well academically, especially with graduation rate, so it automatically scored high in my system. The main issue is just the cost, since it’s one of the more expensive schools. Even though that brought it down a bit, the academic side still pushed it into the top 5.
+          </p>
+        </div>
+      </div>
+  
+      <!-- #5 DARTMOUTH -->
+      <div class="college-card">
+        <div class="college-name">#5 Dartmouth College</div>
+  
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dartmouth_College_campus_2004-03-29_33.JPG" alt="Dartmouth College">
+  
+        <div class="college-details">
+          <p><b>Strongest Areas:</b> Graduation Rate, Distance</p>
+          <p><b>Weakest Area:</b> Student Population</p>
+          <p>
+            Dartmouth made it into the top 5 because it has strong academics and is also relatively closer compared to a lot of the other schools I looked at. The smaller student population was a downside since it means fewer resources and opportunities compared to bigger schools. But overall, it still felt strong enough to stay in the top group.
+          </p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+<!-- TOP 5 (FIXED BUT SIMPLE HTML VERSION) -->
+
+
+<div class="footer">
+</div>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+    margin:20px;
+}
+
+h1{
+    text-align:center;
+    color:#2c3e50;
+    margin-bottom:20px;
+}
+
+.table-container{
+    overflow-x:auto;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:1400px;
+}
+
+thead{
+    background:#1f4e79;
+    color:white;
+}
+
+th, td{
+    padding:12px 10px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+th{
+    position:sticky;
+    top:0;
+    z-index:1;
+}
+
+tbody tr:nth-child(even){
+    background:#f8fbff;
+}
+
+tbody tr:hover{
+    background:#e8f2ff;
+}
+
+.school{
+    text-align:left;
+    font-weight:600;
+    min-width:250px;
+}
+
+.final-rank{
+    background:#d4edda;
+    font-weight:bold;
+    color:#155724;
+    font-size:1.05rem;
+}
+
+.top5{
+    background:#fff3cd !important;
+    font-weight:bold;
+}
+
+.rank{
+    color:#0d6efd;
+    font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<h1>College Ranking Analysis</h1>
+
+<div class="table-container">
+<table>
+
+<thead>
+<tr>
+    <th>College</th>
+    <th>Graduation Rate</th>
+    <th>Grad Rank</th>
+    <th>Annual Cost</th>
+    <th>Tuition Rank</th>
+    <th>Transportation Cost</th>
+    <th>Transport Rank</th>
+    <th>Students</th>
+    <th>Student Rank</th>
+    <th>Distance (Miles)</th>
+    <th>Distance Rank</th>
+    <th>Final Ranking</th>
+</tr>
+</thead>
+
+<tbody>
+
+    <tr class="top5">
+        <td class="school">University of Virginia</td>
+        <td>94%</td><td>4</td><td>$22,000</td><td>5</td>
+        <td>$0</td><td>1</td><td>26,000</td><td>4</td>
+        <td>435</td><td>13</td>
+        <td class="final-rank">4.60</td>
+    </tr>
+    
+    <tr class="top5">
+        <td class="school">University of Georgia</td>
+        <td>88%</td><td>12</td><td>$14,000</td><td>3</td>
+        <td>$0</td><td>1</td><td>40,500</td><td>3</td>
+        <td>1,020</td><td>20</td>
+        <td class="final-rank">6.10</td>
+    </tr>
+    
+    <tr class="top5">
+        <td class="school">Washington University in St. Louis</td>
+        <td>93%</td><td>5</td><td>$22,000</td><td>5</td>
+        <td>$0</td><td>1</td><td>16,500</td><td>8</td>
+        <td>1,160</td><td>22</td>
+        <td class="final-rank">6.50</td>
+    </tr>
+    
+    <tr class="top5">
+        <td class="school">Duke University</td>
+        <td>97%</td><td>1</td><td>$30,000</td><td>9</td>
+        <td>$0</td><td>1</td><td>18,000</td><td>7</td>
+        <td>1,050</td><td>21</td>
+        <td class="final-rank">6.60</td>
+    </tr>
+    
+    <tr class="top5">
+        <td class="school">Dartmouth College</td>
+        <td>95%</td><td>3</td><td>$30,000</td><td>9</td>
+        <td>$0</td><td>1</td><td>6,700</td><td>16</td>
+        <td>125</td><td>2</td>
+        <td class="final-rank">6.90</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Florida State University</td>
+        <td>83%</td><td>18</td><td>$11,000</td><td>1</td>
+        <td>$0</td><td>1</td><td>43,000</td><td>2</td>
+        <td>1,290</td><td>24</td>
+        <td class="final-rank">6.90</td>
+    </tr>
+    
+    <tr>
+        <td class="school">University of California, Los Angeles</td>
+        <td>93%</td><td>6</td><td>$13,000</td><td>2</td>
+        <td>$105</td><td>22</td><td>46,000</td><td>1</td>
+        <td>3,000</td><td>25</td>
+        <td class="final-rank">8.90</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Middlebury College</td>
+        <td>93%</td><td>7</td><td>$31,000</td><td>11</td>
+        <td>$0</td><td>1</td><td>2,800</td><td>22</td>
+        <td>175</td><td>3</td>
+        <td class="final-rank">9.60</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Emory University</td>
+        <td>92%</td><td>9</td><td>$23,000</td><td>7</td>
+        <td>$47</td><td>16</td><td>16,000</td><td>8</td>
+        <td>1,015</td><td>19</td>
+        <td class="final-rank">10.60</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Lehigh University</td>
+        <td>90%</td><td>10</td><td>$37,000</td><td>19</td>
+        <td>$0</td><td>1</td><td>7,400</td><td>14</td>
+        <td>315</td><td>8</td>
+        <td class="final-rank">11.50</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Monmouth University</td>
+        <td>72%</td><td>22</td><td>$31,000</td><td>11</td>
+        <td>$0</td><td>1</td><td>5,000</td><td>18</td>
+        <td>255</td><td>7</td>
+        <td class="final-rank">12.20</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Stetson College</td>
+        <td>63%</td><td>24</td><td>$19,000</td><td>4</td>
+        <td>$0</td><td>1</td><td>3,700</td><td>19</td>
+        <td>1,260</td><td>23</td>
+        <td class="final-rank">12.30</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Gettysburg College</td>
+        <td>82%</td><td>19</td><td>$31,000</td><td>11</td>
+        <td>$0</td><td>1</td><td>2,200</td><td>23</td>
+        <td>390</td><td>11</td>
+        <td class="final-rank">13.00</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Barnard College</td>
+        <td>93%</td><td>8</td><td>$29,000</td><td>8</td>
+        <td>$560</td><td>24</td><td>3,100</td><td>20</td>
+        <td>205</td><td>4</td>
+        <td class="final-rank">13.20</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Georgetown University</td>
+        <td>95%</td><td>2</td><td>$41,000</td><td>24</td>
+        <td>$60</td><td>17</td><td>21,000</td><td>6</td>
+        <td>435</td><td>15</td>
+        <td class="final-rank">13.70</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Adelphi University</td>
+        <td>72%</td><td>21</td><td>$31,000</td><td>11</td>
+        <td>$100</td><td>19</td><td>7,300</td><td>15</td>
+        <td>225</td><td>6</td>
+        <td class="final-rank">14.90</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Bentley University</td>
+        <td>89%</td><td>11</td><td>$38,000</td><td>21</td>
+        <td>$45</td><td>15</td><td>5,100</td><td>17</td>
+        <td>7</td><td>1</td>
+        <td class="final-rank">15.00</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Rochester Institute of Technology</td>
+        <td>73%</td><td>20</td><td>$35,000</td><td>17</td>
+        <td>$100</td><td>19</td><td>16,500</td><td>8</td>
+        <td>390</td><td>11</td>
+        <td class="final-rank">15.60</td>
+    </tr>
+    
+    <tr>
+        <td class="school">George Washington University</td>
+        <td>84%</td><td>16</td><td>$37,000</td><td>19</td>
+        <td>$120</td><td>23</td><td>26,000</td><td>4</td>
+        <td>435</td><td>13</td>
+        <td class="final-rank">15.60</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Pace University</td>
+        <td>62%</td><td>25</td><td>$31,000</td><td>11</td>
+        <td>$560</td><td>24</td><td>13,500</td><td>11</td>
+        <td>215</td><td>5</td>
+        <td class="final-rank">15.80</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Oberlin College</td>
+        <td>83%</td><td>17</td><td>$39,000</td><td>22</td>
+        <td>$0</td><td>1</td><td>2,900</td><td>21</td>
+        <td>675</td><td>17</td>
+        <td class="final-rank">16.10</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Kenyon College</td>
+        <td>87%</td><td>13</td><td>$39,000</td><td>22</td>
+        <td>$0</td><td>1</td><td>1,800</td><td>25</td>
+        <td>690</td><td>18</td>
+        <td class="final-rank">16.20</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Hofstra University</td>
+        <td>67%</td><td>23</td><td>$34,000</td><td>16</td>
+        <td>$100</td><td>19</td><td>10,500</td><td>13</td>
+        <td>325</td><td>9</td>
+        <td class="final-rank">16.70</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Case Western Reserve University</td>
+        <td>86%</td><td>14</td><td>$41,000</td><td>24</td>
+        <td>$25</td><td>14</td><td>12,200</td><td>12</td>
+        <td>635</td><td>16</td>
+        <td class="final-rank">16.80</td>
+    </tr>
+    
+    <tr>
+        <td class="school">Franklin and Marshall College</td>
+        <td>84%</td><td>15</td><td>$36,000</td><td>18</td>
+        <td>$80</td><td>18</td><td>2,200</td><td>24</td>
+        <td>345</td><td>10</td>
+        <td class="final-rank">17.80</td>
+    </tr>
+    
+    </tbody>
+</table>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

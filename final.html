@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Final Weights</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-tab">Home</a>
+  <a href="graduation.html" class="nav-tab">Graduation Rate</a>
+  <a href="cost.html" class="nav-tab">Annual Cost</a>
+  <a href="transportation.html" class="nav-tab">Transportation</a>
+  <a href="students.html" class="nav-tab">Student Population</a>
+  <a href="distance.html" class="nav-tab">Distance</a>
+  <a href="final.html" class="nav-tab active">Final Weights</a>
+</nav>
+
+<div class="section">
+    <h2>Final Weighting System</h2>
+    <div class="card">
+    
+    <p>
+        After selecting these categories, I assigned different weights to reflect their relative importance in my decision-making process. Categories connected to long-term outcomes and affordability, such as Graduation Rate and Annual Cost, received greater emphasis, while categories such as transportation, student population, and distance contributed less to the final score. This allowed me to create a ranking system that reflected both objective statistics and factors that I will realistically consider when evaluating colleges.    </p>
+    
+    </div>
+    <h2>Final Weighted Rankings</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>College</th>
+          <th>Final Score</th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <tr><td>University of Virginia</td><td>4.60</td></tr>
+        <tr><td>University of Georgia</td><td>6.10</td></tr>
+        <tr><td>Washington University in St. Louis</td><td>6.50</td></tr>
+        <tr><td>Duke University</td><td>6.60</td></tr>
+        <tr><td>Dartmouth College</td><td>6.90</td></tr>
+      </tbody>
+    </table>
+    <h2>Citations / Data Sources</h2>
+
+<div class="card">
+
+<!-- SEARCH BOX -->
+<input 
+  type="text" 
+  id="citationSearch" 
+  placeholder="Search schools or sources..."
+  style="width:100%; padding:10px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc;"
+>
+
+<!-- SCROLLABLE PANEL -->
+<div id="citationList" style="max-height: 400px; overflow-y: auto; padding-right: 10px;">
+
+<ul style="list-style:none; padding-left:0; line-height:1.6;">
+
+<li class="cite-item">College Scorecard — https://collegescorecard.ed.gov/search/</li>
+
+<li class="cite-item">Adelphi University — Office of Institutional Research, Common Data Set (Sections B & G)</li>
+
+<li class="cite-item">Barnard College — Institutional Research & Assessment, Common Data Set (Sections B & G)</li>
+
+<li class="cite-item">Bentley University — Office of Institutional Research, Enrollment Fact Book</li>
+
+<li class="cite-item">Case Western Reserve University — Office of Institutional Research, Common Data Set</li>
+
+<li class="cite-item">Dartmouth College — Office of Institutional Research, Common Data Set + Google Maps</li>
+
+<li class="cite-item">Duke University — Office of Institutional Research, Common Data Set</li>
+
+<li class="cite-item">Emory University — Institutional Research, Common Data Set Enrollment Data</li>
+
+<li class="cite-item">Florida State University — Institutional Research, State University System Data</li>
+
+<li class="cite-item">Franklin & Marshall College — Institutional Analysis, Common Data Set Reports</li>
+
+<li class="cite-item">George Washington University — Institutional Research & Planning, Common Data Set</li>
+
+<li class="cite-item">Georgetown University — Assessment & Institutional Research, Common Data Set</li>
+
+<li class="cite-item">Gettysburg College — Institutional Analysis, Common Data Set</li>
+
+<li class="cite-item">Hofstra University — Institutional Research and Assessment, Common Data Set</li>
+
+<li class="cite-item">Kenyon College — Institutional Research, Campus Metrics</li>
+
+<li class="cite-item">Lehigh University — Institutional Research & Analytics, Common Data Set</li>
+
+<li class="cite-item">Middlebury College — Institutional Planning and Research, Common Data Set</li>
+
+<li class="cite-item">Monmouth University — Institutional Research, Common Data Set</li>
+
+<li class="cite-item">Oberlin College — Institutional Research Portfolio</li>
+
+<li class="cite-item">Pace University — Institutional Research, Enrollment Fact Sheet</li>
+
+<li class="cite-item">Rochester Institute of Technology — Academic Affairs Institutional Research</li>
+
+<li class="cite-item">Stetson University — Institutional Research Profiles</li>
+
+<li class="cite-item">UCLA — Academic Planning and Budget, Common Data Set</li>
+
+<li class="cite-item">University of Georgia — Institutional Research Fact Book</li>
+
+<li class="cite-item">University of Virginia — Institutional Assessment and Studies</li>
+
+<li class="cite-item">Washington University in St. Louis — Institutional Research, Common Data Set</li>
+<li class="cite-item">Google Gemini</li>
+
+</ul>
+
+</div>
+</div>
+
+<!-- SEARCH SCRIPT -->
+<script>
+const searchInput = document.getElementById("citationSearch");
+const items = document.querySelectorAll(".cite-item");
+
+searchInput.addEventListener("input", function () {
+  const value = this.value.toLowerCase();
+
+  items.forEach(item => {
+    const text = item.textContent.toLowerCase();
+    item.style.display = text.includes(value) ? "block" : "none";
+  });
+});
+</script>
+</body>
+</html>
